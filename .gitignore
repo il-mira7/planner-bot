@@ -1,0 +1,10 @@
+# личные данные — в репозиторий не попадают
+tasks.json
+tasks.json.tmp
+
+# бинарник
+planner-bot
+*.exe
+
+# локальные	env-файлы
+.env

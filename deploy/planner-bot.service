@@ -1,0 +1,13 @@
+[Unit]
+Description=planner-bot — личный Telegram-планировщик
+After=network-online.target
+
+[Service]
+EnvironmentFile=%h/.config/planner-bot.env
+WorkingDirectory=%h/projects/planner-bot
+ExecStart=%h/projects/planner-bot/planner-bot
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
