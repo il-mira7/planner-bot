@@ -97,8 +97,6 @@ func main() {
 	}
 }
 
-// loadEnv читает ключ-значение из .env файлов и устанавливает их в os.Setenv,
-// если они ещё не были заданы в системе.
 func loadEnv(paths ...string) {
 	for _, path := range paths {
 		data, err := os.ReadFile(path)
